@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TodoList</string>
+    <string name="tituloLogin">Acceso</string>
+    <string name="nombre_usuario">Username</string>
+    <string name="contrasena">Password</string>
+    <string name="botonLogin">Ingresar</string>
+    <string name="facebook_app_id">249541495502107</string>
+    <string name="registro">Registrar</string>
+    <string name="registroUser">Registrar Usuario</string>
+    <string name="tipo">Admin</string>
+    <string name="salir">Salir</string>
+    <string name="menu">Agregar Tarea</string>
+    <string name="taskAdd">Agregar nueva tarea</string>
+
+</resources>

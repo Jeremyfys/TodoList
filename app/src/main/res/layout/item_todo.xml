@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignTop="@+id/task_confirm"
+        android:layout_toRightOf="@+id/idlist"
+        android:layout_toEndOf="@+id/idlist" />
+
+    <ImageButton
+        android:id="@+id/task_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:onClick="deleteTask"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/task_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"
+        android:onClick="editTask"
+        android:layout_alignTop="@+id/task_delete"
+        android:layout_toLeftOf="@+id/task_delete"
+        android:layout_toStartOf="@+id/task_delete" />
+
+    <ImageButton
+        android:id="@+id/task_confirm"
+        android:src="@drawable/check"
+        android:onClick="actualizarEstadoNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/task_edit"
+        android:layout_toLeftOf="@+id/task_edit"
+        android:layout_toStartOf="@+id/task_edit" />
+
+    <TextView
+        android:id="@+id/idlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="ID"
+        android:layout_alignBaseline="@+id/task_title"
+        android:layout_alignBottom="@+id/task_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
